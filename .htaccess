@@ -1,0 +1,16 @@
+#RewriteEngine On
+#RewriteBase /web-lyracorp/
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-l
+
+#RewriteRule ^inicio$ views/landing/index.php [L]
+
+
+
+
+
+#ESTO NO
+#RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+#RewriteRule ^(.*)$ index.php [QSA,L]
