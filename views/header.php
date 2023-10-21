@@ -5,30 +5,33 @@
 <!-- Mirrored from layerdrops.com/opins/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Oct 2023 23:42:25 GMT -->
 <head>
     <meta charset="UTF-8" />
-    <title>Home One || Opins || Creative App Landing Page HTML Template</title>
+    <title>Lyra Corp ™</title>
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="<?=base_url?>assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<?=base_url?>assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?=base_url?>assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?=base_url?>assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?=base_url?>assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?=base_url?>assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?=base_url?>assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?=base_url?>assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?=base_url?>assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?=base_url?>assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?=base_url?>assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?=base_url?>assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?=base_url?>assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?=base_url?>assets/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="<?=base_url?>assets/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- main template stylesheet -->
-    <link rel="stylesheet" href="/web-lyracorp/assets/css/style.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/style.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/registro.css">
 
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/responsive.css">
 </head>
 
 <body>
@@ -40,7 +43,7 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="logo-box clearfix">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/logo-1-1.png" alt="Awesome Image" />
+                        <img src="<?=base_url?>assets/images/logo-1-1.png" alt="Awesome Image" />
                     </a>
                     <button class="menu-toggler" data-target=".header-one .main-navigation">
                         <span class="fa fa-bars"></span>
@@ -81,34 +84,3 @@
             <!-- /.container -->
         </nav>
     </header><!-- /.site-header -->
-    <section class="banner-style-one" id="banner">
-        <span class="bubble-1"></span>
-        <span class="bubble-2"></span>
-        <span class="bubble-3"></span>
-        <span class="bubble-4"></span>
-        <span class="bubble-5"></span>
-        <span class="bubble-6"></span>
-        <img src="images/banner-moc-1-1.png" class="banner-mock" alt="Awesome Image" />
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-8">
-                    <div class="content-block">
-                        <h3>Best Mobile App <br> Template for your <br> Business.</h3>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in <br> culpa qui officia deserunt mollit lorem ipsum anim id est <br> laborum perspiciatis unde.</p>
-                        <div class="button-block">
-                            <a href="#" class="banner-btn">
-                                <i class="fa fa-play"></i>
-                                Get in<span>Google Play</span>
-                            </a>
-                            <a href="#" class="banner-btn">
-                                <i class="fa fa-apple"></i>
-                                Get in<span>Play Store</span>
-                            </a>
-                        </div><!-- /.button-block -->
-                    </div><!-- /.content-block -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.banner-style-one -->
-    <section class="fun-fact-style-one">
-        <div class="container">

@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-6 col-sm-12">
                     <div class="footer-widget">
-                        <a href="index.html"><img src="images/logo-1-1.png" alt="Awesome Image" /></a>
+                        <a href="index.html"><img src="<?=base_url?>assets/images/logo-1-1.png" alt="Awesome Image" /></a>
                     </div><!-- /.footer-widget -->
                 </div><!-- /.col-lg-2 -->
                 <div class="col-lg-3 col-md-6 col-sm-12">
@@ -78,16 +78,16 @@
 </div><!-- /.page-wrapper -->
 <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-long-arrow-up"></i></a>
 <!-- /.scroll-to-top -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/theme.js"></script>
+<script src="<?=base_url?>assets/js/jquery.js"></script>
+<script src="<?=base_url?>assets/js/bootstrap.bundle.min.js"></script>
+<script src="<?=base_url?>assets/js/owl.carousel.min.js"></script>
+<script src="<?=base_url?>assets/js/jquery.bxslider.min.js"></script>
+<script src="<?=base_url?>assets/js/waypoints.min.js"></script>
+<script src="<?=base_url?>assets/js/jquery.easing.min.js"></script>
+<script src="<?=base_url?>assets/js/wow.js"></script>
+<script src="<?=base_url?>assets/js/jquery.validate.min.js"></script>
+<script src="<?=base_url?>assets/js/jquery.counterup.min.js"></script>
+<script src="<?=base_url?>assets/js/theme.js"></script>
 </body>
 
 

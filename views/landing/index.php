@@ -1,4 +1,35 @@
-            <h3 class="title-line">Numbers Speaks Everything</h3><!-- /.title-line -->
+<section class="banner-style-one" id="banner">
+    <span class="bubble-1"></span>
+    <span class="bubble-2"></span>
+    <span class="bubble-3"></span>
+    <span class="bubble-4"></span>
+    <span class="bubble-5"></span>
+    <span class="bubble-6"></span>
+    <img src="<?=base_url?>assets/images/banner-moc-1-1.png" class="banner-mock" alt="Awesome Image" />
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-8">
+                <div class="content-block">
+                    <h3>Best Mobile App <br> Template for your <br> Business.</h3>
+                    <p>Excepteur sint occaecat cupidatat non proident sunt in <br> culpa qui officia deserunt mollit lorem ipsum anim id est <br> laborum perspiciatis unde.</p>
+                    <div class="button-block">
+                        <a href="#" class="banner-btn">
+                            <i class="fa fa-play"></i>
+                            Get in<span>Google Play</span>
+                        </a>
+                        <a href="#" class="banner-btn">
+                            <i class="fa fa-apple"></i>
+                            Get in<span>Play Store</span>
+                        </a>
+                    </div><!-- /.button-block -->
+                </div><!-- /.content-block -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.banner-style-one -->
+<section class="fun-fact-style-one">
+    <div class="container">
+<h3 class="title-line">Numbers Speaks Everything</h3><!-- /.title-line -->
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="single-funfact-one text-center">
@@ -30,7 +61,7 @@
     <section class="services-style-one" id="service">
         <div class="container">
             <div class="block-title text-center">
-                <img src="images/round-circle-1-1.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
+                <img src="<?=base_url?>assets/images/round-circle-1-1.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
                 <h2>Effective tools for <br> busy administrators.</h2>
             </div><!-- /.block-title -->
             <div class="row">
@@ -72,13 +103,13 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="image-block">
-                        <img src="images/moc-1-1.png" alt="Awesome Image" />
+                        <img src="<?=base_url?>assets/images/moc-1-1.png" alt="Awesome Image" />
                     </div><!-- /.image-block -->
                 </div><!-- /.col-lg-6 -->
                 <div class="col-lg-6">
                     <div class="content-block">
                         <div class="block-title ">
-                            <img src="images/round-circle-1-2.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
+                            <img src="<?=base_url?>assets/images/round-circle-1-2.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
                             <h2>Take a control on your <br> mobile app.</h2>
                         </div><!-- /.block-title -->
                         <p>Duis aute irure dolor in reprehenderit in voluptate <br> velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -100,7 +131,7 @@
                 <div class="col-lg-6">
                     <div class="content-block">
                         <div class="block-title ">
-                            <img src="images/round-circle-1-3.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
+                            <img src="<?=base_url?>assets/images/round-circle-1-3.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
                             <h2>Powerful tools for your <br> customers.</h2>
                         </div><!-- /.block-title -->
                         <p>Duis aute irure dolor in reprehenderit in voluptate <br> velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -114,7 +145,7 @@
                 </div><!-- /.col-lg-6 -->
                 <div class="col-lg-6">
                     <div class="image-block">
-                        <img src="images/moc-1-2.png" alt="Awesome Image" />
+                        <img src="<?=base_url?>assets/images/moc-1-2.png" alt="Awesome Image" />
                     </div><!-- /.image-block -->
                 </div><!-- /.col-lg-6 -->
             </div><!-- /.row -->
@@ -123,7 +154,7 @@
     <section class="pricing-style-one" id="pricing">
         <div class="container">
             <div class="block-title text-center">
-                <img src="images/round-circle-1-4.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
+                <img src="<?=base_url?>assets/images/round-circle-1-4.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
                 <h2>Choose plans which suits <br> your needs.</h2>
             </div><!-- /.block-title -->
             <ul class="nav nav-tabs tab-title" role="tablist">
@@ -261,7 +292,7 @@
         </div><!-- /.container -->
     </section><!-- /.pricing-style-one -->
     <section class="testimonials-style-one">
-        <img src="images/map-1-1.png" alt="Awesome Image" class="map-img" />
+        <img src="<?=base_url?>assets/images/map-1-1.png" alt="Awesome Image" class="map-img" />
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 d-flex">
@@ -269,27 +300,27 @@
                         <!-- <img src="images/testi-1-1.png" alt="Awesome Image" class="testi-img" /> -->
                         <div id="testimonials-slider-pager">
                             <div class="testimonials-slider-pager-one">
-                                <a href="#" class="pager-item active" data-slide-index="0"><img src="images/testi-1-1.jpg" alt="Awesome Image" /></a>
-                                <a href="#" class="pager-item" data-slide-index="1"><img src="images/testi-1-2.jpg" alt="Awesome Image" /></a>
-                                <a href="#" class="pager-item" data-slide-index="2"><img src="images/testi-1-3.jpg" alt="Awesome Image" /></a>
-                                <a href="#" class="pager-item" data-slide-index="3"><img src="images/testi-1-4.jpg" alt="Awesome Image" /></a>
-                                <a href="#" class="pager-item" data-slide-index="4"><img src="images/testi-1-5.jpg" alt="Awesome Image" /></a>
-                                <a href="#" class="pager-item" data-slide-index="5"><img src="images/testi-1-6.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item active" data-slide-index="0"><img src="<?=base_url?>assets/images/testi-1-1.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item" data-slide-index="1"><img src="<?=base_url?>assets/images/testi-1-2.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item" data-slide-index="2"><img src="<?=base_url?>assets/images/testi-1-3.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item" data-slide-index="3"><img src="<?=base_url?>assets/images/testi-1-4.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item" data-slide-index="4"><img src="<?=base_url?>assets/images/testi-1-5.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item" data-slide-index="5"><img src="<?=base_url?>assets/images/testi-1-6.jpg" alt="Awesome Image" /></a>
                             </div><!-- /.testimonials-slider-pager-one -->
                             <div class="testimonials-slider-pager-two">
-                                <a href="#" class="pager-item active" data-slide-index="0"><img src="images/testi-1-1.jpg" alt="Awesome Image" /></a>
-                                <a href="#" class="pager-item" data-slide-index="1"><img src="images/testi-1-2.jpg" alt="Awesome Image" /></a>
-                                <a href="#" class="pager-item" data-slide-index="2"><img src="images/testi-1-3.jpg" alt="Awesome Image" /></a>
-                                <a href="#" class="pager-item" data-slide-index="3"><img src="images/testi-1-4.jpg" alt="Awesome Image" /></a>
-                                <a href="#" class="pager-item" data-slide-index="4"><img src="images/testi-1-5.jpg" alt="Awesome Image" /></a>
-                                <a href="#" class="pager-item" data-slide-index="5"><img src="images/testi-1-6.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item active" data-slide-index="0"><img src="<?=base_url?>assets/images/testi-1-1.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item" data-slide-index="1"><img src="<?=base_url?>assets/images/testi-1-2.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item" data-slide-index="2"><img src="<?=base_url?>assets/images/testi-1-3.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item" data-slide-index="3"><img src="<?=base_url?>assets/images/testi-1-4.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item" data-slide-index="4"><img src="<?=base_url?>assets/images/testi-1-5.jpg" alt="Awesome Image" /></a>
+                                <a href="#" class="pager-item" data-slide-index="5"><img src="<?=base_url?>assets/images/testi-1-6.jpg" alt="Awesome Image" /></a>
                             </div><!-- /.testimonials-slider-pager-two -->
                         </div><!-- /#testimonials-slider-pager -->
                     </div><!-- /.my-auto -->
                 </div><!-- /.col-lg-6 -->
                 <div class="col-lg-6">
                     <div class="block-title ">
-                        <img src="images/round-circle-1-6.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
+                        <img src="<?=base_url?>assets/images/round-circle-1-6.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
                         <h2>What’s our clients are <br> saying.</h2>
                     </div><!-- /.block-title -->
                     <ul class="slider testimonials-slider">
@@ -338,34 +369,34 @@
         <div class="container">
             <div class="brand-carousel-one owl-theme owl-carousel">
                 <div class="item">
-                    <img src="images/brand-1-1.png" alt="Awesome Image" />
+                    <img src="<?=base_url?>assets/images/brand-1-1.png" alt="Awesome Image" />
                 </div><!-- /.item -->
                 <div class="item">
-                    <img src="images/brand-1-1.png" alt="Awesome Image" />
+                    <img src="<?=base_url?>assets/images/brand-1-1.png" alt="Awesome Image" />
                 </div><!-- /.item -->
                 <div class="item">
-                    <img src="images/brand-1-1.png" alt="Awesome Image" />
+                    <img src="<?=base_url?>assets/images/brand-1-1.png" alt="Awesome Image" />
                 </div><!-- /.item -->
                 <div class="item">
-                    <img src="images/brand-1-1.png" alt="Awesome Image" />
+                    <img src="<?=base_url?>assets/images/brand-1-1.png" alt="Awesome Image" />
                 </div><!-- /.item -->
                 <div class="item">
-                    <img src="images/brand-1-1.png" alt="Awesome Image" />
+                    <img src="<?=base_url?>assets/images/brand-1-1.png" alt="Awesome Image" />
                 </div><!-- /.item -->
                 <div class="item">
-                    <img src="images/brand-1-1.png" alt="Awesome Image" />
+                    <img src="<?=base_url?>assets/images/brand-1-1.png" alt="Awesome Image" />
                 </div><!-- /.item -->
                 <div class="item">
-                    <img src="images/brand-1-1.png" alt="Awesome Image" />
+                    <img src="<?=base_url?>assets/images/brand-1-1.png" alt="Awesome Image" />
                 </div><!-- /.item -->
                 <div class="item">
-                    <img src="images/brand-1-1.png" alt="Awesome Image" />
+                    <img src="<?=base_url?>assets/images/brand-1-1.png" alt="Awesome Image" />
                 </div><!-- /.item -->
                 <div class="item">
-                    <img src="images/brand-1-1.png" alt="Awesome Image" />
+                    <img src="<?=base_url?>assets/images/brand-1-1.png" alt="Awesome Image" />
                 </div><!-- /.item -->
                 <div class="item">
-                    <img src="images/brand-1-1.png" alt="Awesome Image" />
+                    <img src="<?=base_url?>assets/images/brand-1-1.png" alt="Awesome Image" />
                 </div><!-- /.item -->
             </div><!-- /.brand-carousel-one -->
             <hr class="style-one" />
@@ -374,7 +405,7 @@
     <section class="faq-style-one">
         <div class="container">
             <div class="block-title text-center">
-                <img src="images/round-circle-1-7.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
+                <img src="<?=base_url?>assets/images/round-circle-1-7.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
                 <h2>Want to ask something <br> from us?</h2>
             </div><!-- /.block-title -->
             <div class="accrodion-grp" data-grp-name="faq-accrodion">
@@ -424,7 +455,7 @@
     <section class="blog-style-one" id="blog">
         <div class="container">
             <div class="block-title text-center">
-                <img src="images/round-circle-1-8.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
+                <img src="<?=base_url?>assets/images/round-circle-1-8.png" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1000ms" />
                 <h2>Check out our latest <br> news & articles.</h2>
             </div><!-- /.block-title -->
             <div class="row">
@@ -432,7 +463,7 @@
                     <div class="single-blog-style-one">
                         <div class="image-block">
                             <div class="inner-block">
-                                <img src="images/blog-1-1.png" alt="Awesome Image" />
+                                <img src="<?=base_url?>assets/images/blog-1-1.png" alt="Awesome Image" />
                                 <div class="date-block">
                                     30 April, 2019
                                 </div><!-- /.date-block -->
@@ -455,7 +486,7 @@
                     <div class="single-blog-style-one">
                         <div class="image-block">
                             <div class="inner-block">
-                                <img src="images/blog-1-2.png" alt="Awesome Image" />
+                                <img src="<?=base_url?>assets/images/blog-1-2.png" alt="Awesome Image" />
                                 <div class="date-block">
                                     30 April, 2019
                                 </div><!-- /.date-block -->
@@ -478,7 +509,7 @@
                     <div class="single-blog-style-one">
                         <div class="image-block">
                             <div class="inner-block">
-                                <img src="images/blog-1-3.png" alt="Awesome Image" />
+                                <img src="<?=base_url?>assets/images/blog-1-3.png" alt="Awesome Image" />
                                 <div class="date-block">
                                     30 April, 2019
                                 </div><!-- /.date-block -->

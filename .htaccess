@@ -1,3 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    ErrorDocument 404 http://localhost/web-lyracorp/error/
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+    #RewriteRule ^inicio$ views/landing/index.php [L]
+</IfModule>
+
 #RewriteEngine On
 #RewriteBase /web-lyracorp/
 
