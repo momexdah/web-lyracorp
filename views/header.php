@@ -8,6 +8,8 @@
     <title>Lyra Corp ™</title>
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script-->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="<?=base_url?>assets/images/favicon/apple-icon-57x57.png">
@@ -32,6 +34,8 @@
     <link rel="stylesheet" href="<?=base_url?>assets/css/registro.css">
 
     <link rel="stylesheet" href="<?=base_url?>assets/css/responsive.css">
+
+    <!--script src="<?=base_url?>views/landing/js/landing.js" ></script-->
 </head>
 
 <body>
@@ -42,8 +46,8 @@
             <div class="container clearfix">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="logo-box clearfix">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="<?=base_url?>assets/images/logo-1-1.png" alt="Awesome Image" />
+                    <a class="navbar-brand"  href="<?=base_url?>landing/index">
+                        <img src="<?=base_url?>assets/images/logo-1-1.png"  alt="Awesome Image" />
                     </a>
                     <button class="menu-toggler" data-target=".header-one .main-navigation">
                         <span class="fa fa-bars"></span>
@@ -65,7 +69,7 @@
                                 </li>
                             </ul><!-- /.sub-menu -->
                         </li>
-                        <li class="scrollToLink"><a href="#service">Features</a></li>
+                        <li class="scrollToLink"><a href="<?=base_url?>landing/index">Features</a></li>
                         <li class="scrollToLink"><a href="#features">App Screens</a></li>
                         <li class="scrollToLink"><a href="#pricing">Pricing</a></li>
                         <li class="scrollToLink">
@@ -77,9 +81,16 @@
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
-                <div class="right-side-box">
-                    <a href="#" class="header-btn">Login</a>
-                </div><!-- /.right-side-box -->
+                <?php if(!isset($_SESSION['identity'])): ?>
+                    <div class="right-side-box">
+                        <a href="<?=base_url?>usuarios/login" class="header-btn">Login</a>
+                    </div>
+                <?php else: ?>
+                    <div class="right-side-box">
+                        <a href="<?=base_url?>usuarios/logout" class="header-btn">Bienvenid@, <?=$_SESSION['identity']->usuario?></a>
+                    </div>
+                <?php endif; ?>
+                <!-- /.right-side-box -->
             </div>
             <!-- /.container -->
         </nav>

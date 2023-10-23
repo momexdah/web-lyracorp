@@ -1,5 +1,5 @@
 <?php
-class usuarios{
+class Usuarios{
     private $id;
     private $id_persona;
     private $id_perfil;
@@ -76,7 +76,7 @@ class usuarios{
      */
     public function setUsuario($usuario)
     {
-        $this->usuario = $usuario;
+        $this->usuario = $this->db->real_escape_string($usuario);
     }
 
     /**
@@ -84,7 +84,8 @@ class usuarios{
      */
     public function getClave()
     {
-        return $this->clave;
+        //return $this->clave;
+        return password_hash($this->db->real_escape_string($this->clave), PASSWORD_BCRYPT, ['cost'=>4]);
     }
 
     /**
@@ -94,6 +95,7 @@ class usuarios{
     {
         $this->clave = $clave;
     }
+
 
     /**
      * @return mixed
@@ -108,7 +110,7 @@ class usuarios{
      */
     public function setUrlImagen($url_imagen)
     {
-        $this->url_imagen = $url_imagen;
+        $this->url_imagen = $this->db->real_escape_string($url_imagen);
     }
 
     /**
@@ -144,8 +146,38 @@ class usuarios{
     }
 
     public function save(){
-        $sql = "call uspset_usuario(0,'{$this->getUsuario()}',)";
+        $sql = "call uspset_usuario('INSERT_UPDATE',0,1,2,'{$this->getUsuario()}','{$this->getClave()}','imagen.jpg',1,1)";
         $save = $this->db->query($sql);
+
+        $result = false;
+        if ($save){
+         $result = true;
+        }else {
+            echo "Error en la consulta: " . $this->db->error;
+        }
+        return $result;
+    }
+
+    public function login(){
+        $resultado = false;
+        $email = $this->usuario;
+        $clave = $this->clave;
+
+        $sql = "SELECT * from usuarios where usuario = '$email'";
+        $login = $this->db->query($sql);
+
+
+        if ($login && $login->num_rows==1){
+            $usuario = $login->fetch_object();
+            //Verificar la clave
+            $verificar_clave = password_verify($clave,$usuario->clave);
+
+            if ($verificar_clave){
+                $resultado = $usuario;
+            }
+
+        }
+        return $resultado;
     }
 
 }
