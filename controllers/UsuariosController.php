@@ -12,6 +12,10 @@ class usuariosController{
     public function login(){
         require_once 'views/usuarios/login.php';
     }
+
+    public function panel(){
+        require_once 'views/usuarios/panel.php';
+    }
     public function save(){
         if (isset($_POST)){
             $tipo_documento = isset($_POST['tipo_documento']) ? $_POST['tipo_documento']:false;

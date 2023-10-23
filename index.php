@@ -4,7 +4,11 @@ require_once 'autoload.php';
 require_once 'config/db.php';
 require_once 'config/parameters.php';
 require_once 'helpers/utils.php';
-require_once 'views/header.php';
+if (basename($_SERVER['PHP_SELF']) !== 'views/usuarios/panel.php') {
+    // Incluye el encabezado solo si no es 'panel.php'
+    require_once 'views/header.php';
+}
+//require_once 'views/header.php';
 
 //Conexion DB
 #$db  = Database::connect();
@@ -39,4 +43,8 @@ if(class_exists($nombre_controlador)){
     showError();
 }
 
-require_once 'views/footer.php';
+if (basename($_SERVER['PHP_SELF']) !== 'views/usuarios/panel.php') {
+    // Incluye el pie de página solo si no es 'panel.php'
+    require_once 'views/footer.php';
+}
+//require_once 'views/footer.php';
