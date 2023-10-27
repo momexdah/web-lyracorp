@@ -14,7 +14,18 @@ class usuariosController{
     }
 
     public function panel(){
-        require_once 'views/usuarios/panel.php';
+
+        //require_once 'views/usuarios/panel.php';
+        $this->view('usuarios/panel.php', false);
+    }
+    public function view($view, $includeLayout = true) {
+        if ($includeLayout) {
+            // Cargar el layout.php
+            require_once 'views/layout.php';
+        } else {
+            // Cargar la vista específica sin el layout
+            require_once 'views/' . $view;
+        }
     }
     public function save(){
         if (isset($_POST)){
