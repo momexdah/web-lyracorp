@@ -13,6 +13,13 @@
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>
+  <component name="PhpStepFilterConfiguration">
+    <skipped_functions>
+      <skipped_function name="Usuarios-&gt;save" />
+      <skipped_function name="usuariosController-&gt;save" />
+      <skipped_function name="usuariosController-&gt;logueo" />
+    </skipped_functions>
+  </component>
   <component name="PsalmOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>

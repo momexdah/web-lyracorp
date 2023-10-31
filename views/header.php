@@ -81,15 +81,10 @@
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
-                <?php if(!isset($_SESSION['identity'])): ?>
-                    <div class="right-side-box">
-                        <a href="<?=base_url?>usuarios/login" class="header-btn">Login</a>
-                    </div>
-                <?php else: ?>
-                    <div class="right-side-box">
-                        <a href="<?=base_url?>usuarios/logout" class="header-btn">Bienvenid@, <?=$_SESSION['identity']->usuario?></a>
-                    </div>
-                <?php endif; ?>
+                <div class="right-side-box">
+                    <a href="<?=base_url?>usuarios/login" class="header-btn">Login</a>
+                </div>
+
                 <!-- /.right-side-box -->
             </div>
             <!-- /.container -->

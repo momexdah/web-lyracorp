@@ -5,8 +5,13 @@ require_once 'config/db.php';
 require_once 'config/parameters.php';
 require_once 'helpers/utils.php';
 
-require_once 'views/header.php';
+//require_once 'views/header.php';
+$isPanelView = isset($_GET['controller']) && $_GET['controller'] === 'usuarios' && isset($_GET['action']) && $_GET['action'] === 'panel';
 
+// Incluir el encabezado solo si no es la vista de usuarios/panel
+if (!$isPanelView) {
+    require_once 'views/header.php';
+}
 //Conexion DB
 #$db  = Database::connect();
 
@@ -39,5 +44,7 @@ if(class_exists($nombre_controlador)){
 }else{
     showError();
 }
-
-require_once 'views/footer.php';
+if (!$isPanelView) {
+    require_once 'views/footer.php';
+}
+//require_once 'views/footer.php';

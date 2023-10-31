@@ -14,18 +14,7 @@ class usuariosController{
     }
 
     public function panel(){
-
-        //require_once 'views/usuarios/panel.php';
-        $this->view('usuarios/panel.php', false);
-    }
-    public function view($view, $includeLayout = true) {
-        if ($includeLayout) {
-            // Cargar el layout.php
-            require_once 'views/layout.php';
-        } else {
-            // Cargar la vista específica sin el layout
-            require_once 'views/' . $view;
-        }
+        require_once 'views/usuarios/panel.php';
     }
     public function save(){
         if (isset($_POST)){
@@ -85,9 +74,9 @@ class usuariosController{
             $identity = $usuarioObj->login();
             if ($identity&&is_object($identity)){
                 $_SESSION['identity'] = $identity;
-                /*if($identity->id_perfil==1){
+                if($identity->id_perfil=='1'){
                     $_SESSION['admin'] = true;
-                }*/
+                }
             }else{
                 $_SESSION['error_login'] = 'Identificación fallida';
             }
@@ -97,8 +86,8 @@ class usuariosController{
         /*echo '<pre>';
         var_dump($_SESSION);
         echo '</pre>';*/
-
-        echo '<script>window.location="'.base_url.'"</script>';
+        //echo '<script>window.location="'.base_url.'"</script>';
+        echo '<script>window.location="'.base_url.'usuarios/panel"</script>';
         //header("Location:".base_url);
     }
 
@@ -106,9 +95,9 @@ class usuariosController{
         if(isset($_SESSION['identity'])){
             unset($_SESSION['identity']);
         }
-       /* if(isset($_SESSION['admin'])){
+       if(isset($_SESSION['admin'])){
             unset($_SESSION['admin']);
-        }*/
+        }
         echo '<script>window.location="'.base_url.'"</script>';
     }//fin clase
 
